@@ -14,6 +14,6 @@ script:
 notifications:
   email:
     recipients:
-      - your-email@example.com
+      tothanhmta@gmail.com
     on_success: change # chỉ thông báo khi trạng thái từ thành công sang thất bại
     on_failure: always # luôn thông báo khi có lỗi
