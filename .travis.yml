@@ -25,5 +25,5 @@ addons:
       secure: "your-sonarcloud-token"
 
 script:
-  # other scripts
-  - mvn clean verify sonar:sonar -Dsonar.projectKey=your-sonarcloud-project-key
+  # các lệnh khác để xây dựng và kiểm thử
+  - sonar-scanner # Chạy phân tích SonarCloud
