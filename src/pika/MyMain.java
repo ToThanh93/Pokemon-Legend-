@@ -1,8 +1,5 @@
 package pika;
 
-/**
- 
- */
 public class MyMain {
 	MyFrame frame;
 
