@@ -1,0 +1,9 @@
+language: java
+
+jdk:
+  - openjdk11
+
+script:
+  - ./mvnw clean install
+
+# Cấu hình này sẽ cài đặt môi trường Java và chạy lệnh maven để xây dựng và kiểm thử dự án.
