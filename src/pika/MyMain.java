@@ -1,8 +1,7 @@
 package pika;
 
 /**
- * ----------------- @author nguyenvanquan7826 -----------------
- * ---------------nguyenvanquan7826.wordpress.com --------------
+ 
  */
 public class MyMain {
 	MyFrame frame;
