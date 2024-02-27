@@ -19,7 +19,7 @@ public class MyMain {
 		public void run() {
 			while (true) {
 				try {
-					Thread.sleep(1200);
+					Thread.sleep(1100);
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
