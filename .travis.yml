@@ -16,9 +16,9 @@ notifications:
 
 addons:
   sonarcloud:
-    organization: "your-organization-key" # Thay thế bằng khóa tổ chức SonarCloud của bạn
+    organization: "tothanh93" # Thay thế bằng khóa tổ chức SonarCloud của bạn
     token:
-      secure: "your-sonarcloud-token" # Thay thế bằng token SonarCloud đã được mã hóa của bạn
+      secure: "7b8fac6c6895d11afaa34c7b9a680011a51c9514" # Thay thế bằng token SonarCloud đã được mã hóa của bạn
 
 # Các lệnh để chạy bộ kiểm thử và SonarCloud scan
 script:
