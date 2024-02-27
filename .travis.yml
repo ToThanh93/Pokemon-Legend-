@@ -17,3 +17,13 @@ notifications:
       tothanhmta@gmail.com
     on_success: change # chỉ thông báo khi trạng thái từ thành công sang thất bại
     on_failure: always # luôn thông báo khi có lỗi
+#Sonar
+addons:
+  sonarcloud:
+    organization: "your-organization-key"
+    token:
+      secure: "your-sonarcloud-token"
+
+script:
+  # other scripts
+  - mvn clean verify sonar:sonar -Dsonar.projectKey=your-sonarcloud-project-key
