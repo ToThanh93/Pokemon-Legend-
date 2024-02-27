@@ -6,24 +6,21 @@ jdk:
 before_script:
   - echo "Starting build"
 
-# Các lệnh để chạy bộ kiểm thử
-script:
-  - mvn test
-
 # Cấu hình thông báo
 notifications:
   email:
     recipients:
-      tothanhmta@gmail.com
-    on_success: change # chỉ thông báo khi trạng thái từ thành công sang thất bại
+      - tothanhmta@gmail.com
+    on_success: change # chỉ thông báo khi trạng thái thay đổi
     on_failure: always # luôn thông báo khi có lỗi
-#Sonar
+
 addons:
   sonarcloud:
-    organization: "your-organization-key"
+    organization: "your-organization-key" # Thay thế bằng khóa tổ chức SonarCloud của bạn
     token:
-      secure: "your-sonarcloud-token"
+      secure: "your-sonarcloud-token" # Thay thế bằng token SonarCloud đã được mã hóa của bạn
 
+# Các lệnh để chạy bộ kiểm thử và SonarCloud scan
 script:
-  # các lệnh khác để xây dựng và kiểm thử
-  - sonar-scanner # Chạy phân tích SonarCloud
+  - mvn test
+  - mvn clean verify sonar:sonar -Dsonar.projectKey=your-sonarcloud-project-key # Thay thế bằng khóa dự án SonarCloud của bạn
